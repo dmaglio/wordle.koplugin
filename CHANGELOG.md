@@ -10,6 +10,14 @@ All notable changes to this project will be documented in this file.
   all accent-normalized (PERCHÉ -> PERCHE). Words come from
   napolux/paroleitaliane (MIT); answers were chosen by frequency
   (hermitdave/FrequencyWords). Italian UI and rules translations.
+## [1.2.2] - 2026-10-07
+
+### Fixed
+- The Tools menu entry is translated again. `main.lua` took `_` from
+  KOReader's `gettext`, which knows nothing of this plugin's strings, so the
+  menu label stayed English while the game's own screen, which goes through
+  `i18n`, was translated. `_` now comes from `i18n` here too.
+
 
 ## [1.2.1] - 2026-10-01
 
